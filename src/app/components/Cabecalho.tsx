@@ -1,6 +1,8 @@
 "use client"
 
 import Link from 'next/link';
+import Image from 'next/image';
+import logo from './../../public/images/porto.png'
 
 
 
@@ -14,14 +16,14 @@ const Cabecalho: React.FC = () => {
         rel="noopener noreferrer"
         className="flex-shrink-0"
       >
-        <img src="/porto.png" alt="logo da porto"/>
+        <Image src={logo} alt='Logo Porto' className='w-72' />
       </a>
 
       {/* Navigation */}
       <nav>
-        <Link href="/login">
+        <Link href="/Login">
           {/* Remova o elemento <a> */}
-          <span className="px-4 py-2 bg-blue-500 text-white rounded-md transition-colors duration-300 hover:bg-blue-700">
+          <span className="px-4 py-2 bg-blue-500 text-white rounded-md transition-colors duration-300 hover:bg-blue-700 ">
             Login
           </span>
         </Link>
