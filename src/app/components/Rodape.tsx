@@ -1,15 +1,12 @@
 "use client"
-
+import Image from 'next/image';
 import React from 'react';
+import logo from './../../public/images/portobranco.png'
 
 const Rodape: React.FC = () => {
   return (
     <footer className="p-5 bg-black text-white text-center">
-      <img
-        src="/imagem.white porto.png" // Certifique-se de que o caminho da imagem esteja correto
-        alt="Logo"
-        className="w-[150px]"
-      />
+      <Image src={logo} alt='Logo Porto' className='w-28 mx-auto' />
     </footer>
   );
 };
