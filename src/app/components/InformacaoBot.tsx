@@ -37,7 +37,7 @@ const InformacaoBot: React.FC = () => {
         
         {/* Botão */}
         <a
-          href="/login"
+          href="/Login"
           className="inline-block px-6 py-3 bg-blue-500 text-white rounded-md mt-5 text-xl hover:bg-blue-700 transition-colors"
         >
           COMECE JÁ!
