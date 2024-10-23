@@ -23,7 +23,7 @@ const Cabecalho: React.FC = () => {
       <nav>
         <Link href="/Login">
           {/* Remova o elemento <a> */}
-          <span className="px-4 py-2 bg-blue-500 text-white rounded-md transition-colors duration-300 hover:bg-blue-700 ">
+          <span className="px-4 py-2 bg-blue-500 text-white rounded-md transition-colors duration-300 hover:bg-blue-700 w-80">
             Login
           </span>
         </Link>

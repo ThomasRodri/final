@@ -8,7 +8,7 @@ export default function Home() {
  return(<main className="w-auto">
  
  <Cabecalho/>
- <InformacaoBot/>
+ <InformacaoBot />
  <Rodape/>
  
  </main>

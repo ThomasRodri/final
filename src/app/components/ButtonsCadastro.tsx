@@ -1,6 +1,7 @@
 "use client"
 import React from 'react';
 
+
 export const ButtonsCadastro: React.FC = () => {
   return (
     <>
@@ -16,7 +17,7 @@ export const ButtonsCadastro: React.FC = () => {
       <button
         type="button"
         className="w-full px-5 py-2 bg-gray-600 text-white rounded-md mt-3 cursor-pointer transition-colors duration-300 hover:bg-gray-700"
-        onClick={() => window.location.href = '/login'}
+        onClick={() => window.location.href = '/Login'}
       >
         Voltar
       </button>
