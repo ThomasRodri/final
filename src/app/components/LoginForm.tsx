@@ -10,7 +10,7 @@ const LoginForm: React.FC = () => {
   };
 
   const handleGoBack = () => {
-    window.location.href = '/Home';
+    window.location.href = '/';
   };
 
   return (
