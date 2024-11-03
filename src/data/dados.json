@@ -2,5 +2,6 @@
     "nome" : "",
     "username" : "",
     "email" : "",
+    "cpf": 0,
     "senha" : ""
   }
