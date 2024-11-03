@@ -110,7 +110,7 @@ const Bot = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
       <h1 style={{ textAlign: 'center', padding: '10px', margin: 0, backgroundColor: '#3B82F6', color: '#fff' }}>
-        Vision Assistant
+      Visinho Assistant
       </h1>
 
       <div style={{ flex: 1, overflowY: 'auto', padding: '20px', backgroundColor: '#f9f9f9' }}>
