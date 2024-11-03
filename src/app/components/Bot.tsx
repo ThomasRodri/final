@@ -22,12 +22,12 @@ const Bot = () => {
   // Respostas sugeridas para cada pergunta do bot
   const suggestedAnswers = [
     [
-      "O carro está fazendo um barulho estranho quando eu acelero.",
-      "Tem uma luz de alerta no painel que acendeu ontem.",
+      
+      
       "Ele está demorando para ligar, especialmente nas manhãs frias.",
       "O freio está parecendo mais rígido e demora para responder.",
       "Estou sentindo um cheiro estranho de queimado quando o motor esquenta.",
-      "O ar-condicionado parou de funcionar do nada.",
+     
       "Sinto que o carro está sem força quando subo uma ladeira.",
       "Está saindo fumaça branca do escapamento quando eu acelero."
     ],
