@@ -8,19 +8,19 @@ export default function IntegrantesP() {
     {
       id: 1,
       imageUrl: thomas, // Usando a imagem importada diretamente
-      texto1: 'Thomas',
+      texto1: 'Thomas Rodrigues Ribeiro Silva',
       texto2: 'RM558042',
     },
     {
       id: 2,
       imageUrl: pedro, // Usando a imagem de Pedro
-      texto1: 'Pedro',
+      texto1: 'Pedro Valentim Merise ',
       texto2: 'RM558043',
     },
     {
       id: 3,
       imageUrl: miguel, // Usando a imagem de Miguel
-      texto1: 'Miguel',
+      texto1: 'Miguel Barros Ramos',
       texto2: 'RM558044',
     },
   ];
