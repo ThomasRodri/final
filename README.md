@@ -1,3 +1,45 @@
+Vision Assistant:
+
+Vision Assistant é um chatbot desenvolvido em Next.js com TypeScript, projetado para auxiliar usuários com problemas em seus veículos. O assistente coleta informações sobre o problema e oferece recomendações, como visitar um mecânico para uma inspeção mais detalhada.
+
+
+
+Funcionalidades:
+
+Interação com o Chatbot: O assistente conversa com o usuário, perguntando sobre os problemas do carro e oferecendo orientações iniciais.
+Interface Intuitiva: A interface foi projetada com um toque de azul similar ao da Porto Seguro, garantindo uma experiência visual agradável.
+Análise Básica de Problemas: Com base nas respostas dos usuários, o chatbot sugere ações ou aconselha o usuário a procurar um mecânico.
+
+
+
+Tecnologias Utilizadas:
+
+Next.js: Estrutura React para renderização no servidor e criação de interfaces reativas.
+TypeScript: Proporciona tipagem estática e maior segurança no desenvolvimento.
+Tailwind CSS: Utilizado para estilização rápida e responsiva da interface.
+
+
+
+Como Usar:
+
+Cadastro: Faça o cadastro para gurdar seus dados de login.
+Login: Após o cadastro é só fazer o login com os dados cadastrados.
+Acesse o Chatbot: Ao acessar o site, o chatbot estará disponível na página inicial.
+Informe o Problema: Responda às perguntas sobre o problema do veículo. O assistente usará essas informações para oferecer orientações.
+Receba Recomendações: Com base nas respostas, o Vision Assistant recomendará que você procure um mecânico, caso necessário, para uma avaliação mais profunda.
+
+
+
+Estrutura de Pastas:
+
+src/: Contém o código-fonte do projeto, incluindo componentes e lógica do chatbot.
+public/: Arquivos públicos, como ícones e imagens.
+pages/: Arquivos de página do Next.js para roteamento e renderização.
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
