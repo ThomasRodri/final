@@ -6,10 +6,10 @@ const Integrantes: React.FC = () => {
       <div className="text-center">
         <img
           src="thomas.jpg"
-          alt="Foto do Thomas"
+          alt="Foto do Thomas "
           className="w-36 h-36 object-cover rounded-full"
         />
-        <p className="mt-2">Nome: Thomas Rodrigues</p>
+        <p className="mt-2">Nome: Thomas Rodrigues Ribeiro Silva</p>
         <p>RM: 558042</p>
       </div>
 
