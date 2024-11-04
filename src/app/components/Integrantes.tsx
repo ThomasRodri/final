@@ -9,7 +9,7 @@ const Integrantes: React.FC = () => {
           alt="Foto do Thomas"
           className="w-36 h-36 object-cover rounded-full"
         />
-        <p className="mt-2">Nome: Thomas Rodrigues</p>
+        <p className="mt-2">Thomas Rodrigues Ribeiro Silva</p>
         <p>RM: 558042</p>
       </div>
 
