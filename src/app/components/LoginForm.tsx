@@ -1,12 +1,34 @@
-"use client"
-import React from 'react';
+"use client";
+import React, { useState } from 'react';
 import Image from 'next/image';
-import logo from './../../public/images/porto.png'
+import logo from './../../public/images/porto.png';
 
 const LoginForm: React.FC = () => {
+  const [credentials, setCredentials] = useState({ email: '', senha: '' });
 
-  const handleLogin = () => {
-    window.location.href = '/Botpage';
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setCredentials({ ...credentials, [name]: value });
+  };
+
+  const handleLogin = async () => {
+    try {
+      const response = await fetch("http://localhost:8080/clientes/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(credentials),
+      });
+      if (response.ok) {
+        alert("Login bem-sucedido!");
+        window.location.href = '/Botpage';
+      } else {
+        alert("Erro de autenticação");
+      }
+    } catch (error) {
+      console.error("Erro ao logar:", error);
+    }
   };
 
   const handleGoBack = () => {
@@ -14,43 +36,41 @@ const LoginForm: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
-      <div className="bg-gradient-to-b from-[#0082c8] to-[#00578a] p-8 rounded-xl w-[80vw] max-w-[30rem] text-center shadow-lg">
-        <Image src={logo} alt='Logo Porto' className='w-3/5 mx-auto' />
+    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+      <div className="bg-gradient-to-b from-[#0082c8] to-[#00578a] p-10 rounded-xl w-[85vw] max-w-[28rem] text-center shadow-lg">
+        <Image src={logo} alt="Logo Porto" width={120} height={120} className="mb-6 mx-auto" />
+        <h2 className="text-white text-2xl font-semibold mb-6">Iniciar sessão</h2>
 
-        <h2 className="text-white text-2xl mb-6 font-bold">Iniciar sessão</h2>
-
-        <div className="mb-4 w-[90%] mx-auto">
-          <input
-            type="text"
-            placeholder="Email ou CPF"
-            className="w-full p-3 mt-2 rounded-lg border-none font-bold"
-          />
-        </div>
-
-        <div className="mb-4 w-[90%] mx-auto">
-          <input
-            type="password"
-            placeholder="Senha"
-            className="w-full p-3 mt-2 rounded-lg border-none font-bold"
-          />
-        </div>
+        {/* Input Fields */}
+        <input
+          name="email"
+          placeholder="Email ou CPF"
+          onChange={handleInputChange}
+          className="w-full px-4 py-3 mb-4 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <input
+          name="senha"
+          placeholder="Senha"
+          type="password"
+          onChange={handleInputChange}
+          className="w-full px-4 py-3 mb-4 text-gray-700 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
         
-        <a href="/Cadastro" className="text-white block mt-4 font-bold hover:underline">
-          Não tem cadastro? Crie um!
-        </a>
+        {/* Link para cadastro */}
+        <p className="text-white text-sm mb-4">
+          Não tem cadastro? <a href="/Cadastro" className="font-semibold underline">Crie um!</a>
+        </p>
 
+        {/* Buttons */}
         <button
-          type="button"
           onClick={handleLogin}
-          className="inline-block p-3 mt-4 text-white bg-[#00578a] rounded-lg w-[90%] text-lg font-bold hover:bg-[#004a70]"
+          className="w-full px-5 py-3 mb-3 text-white bg-[#00578a] rounded-md cursor-pointer transition-colors duration-300 hover:bg-blue-800"
         >
           Entrar
         </button>
-
         <button
           onClick={handleGoBack}
-          className="inline-block p-3 mt-4 text-white bg-[#00578a] rounded-lg w-[90%] text-lg font-bold hover:bg-[#004a70]"
+          className="w-full px-5 py-3 text-white bg-[#00578a] rounded-md cursor-pointer transition-colors duration-300 hover:bg-blue-800"
         >
           Voltar à página principal
         </button>
