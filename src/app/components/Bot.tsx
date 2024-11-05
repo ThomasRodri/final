@@ -8,7 +8,8 @@ const Bot = () => {
 
   const [messages, setMessages] = useState(initialMessages);
   const [userInput, setUserInput] = useState('');
-  const [step, setStep] = useState(1); // Inicia em 1, pois já fizemos a primeira pergunta
+  const [step, setStep] = useState(1); // Inicia em 1, pois já fizemos a primeira pergunta 
+
 
   // Fluxo de perguntas do bot para o diagnóstico
   const botQuestions = [
@@ -19,7 +20,7 @@ const Bot = () => {
     "Já levou o carro ao mecânico antes?"
   ];
 
-  // Respostas sugeridas para cada pergunta do bot
+  // As respostar criadas para cada pergunta do bot
   const suggestedAnswers = [
     [
       
